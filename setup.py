@@ -11,7 +11,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="biasgen",
-    version="0.1.0",
+    version="0.1.3",
     description="Utility functions to produce and visualize simulated "
                 "bias fields generated according to Kern et. al's "
                 "sinusoidal sensitivity model.",
@@ -21,7 +21,7 @@ setup(
     author="Luciano Vinas",
     author_email="lucianovinas@g.ucla.edu",
     license='MIT',
-    packages=find_packages(where="biasgen"),
+    packages=find_packages(exclude=['tests']),
     python_requires=">=3.10",
     install_requires=[
         "numpy>=1.20",
